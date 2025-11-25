@@ -1,0 +1,1047 @@
+[
+  {
+    "feature": "leakage_rate_max60",
+    "mean_drop": 0.008907741251325563,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "vibration_y",
+    "mean_drop": 0.008200777659950465,
+    "std_drop": 0.0008773187448561933
+  },
+  {
+    "feature": "ferrous_particles_slope60",
+    "mean_drop": 0.0067161541180629,
+    "std_drop": 0.0009997974990265685
+  },
+  {
+    "feature": "overall_vibration_slope60",
+    "mean_drop": 0.005302226935312793,
+    "std_drop": 0.0009744820609466564
+  },
+  {
+    "feature": "power_factor_m60",
+    "mean_drop": 0.004948745139625288,
+    "std_drop": 0.0005914881771184407
+  },
+  {
+    "feature": "vibration_z",
+    "mean_drop": 0.0044538706256627815,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "leakage_rate_s60",
+    "mean_drop": 0.0041710851891127556,
+    "std_drop": 0.00014139271827504627
+  },
+  {
+    "feature": "ferrous_particles_max60",
+    "mean_drop": 0.003605514316012659,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "ferrous_particles",
+    "mean_drop": 0.0033227288794626776,
+    "std_drop": 0.0006163165703132828
+  },
+  {
+    "feature": "vibration_x",
+    "mean_drop": 0.0033227288794626776,
+    "std_drop": 0.0010146836404670994
+  },
+  {
+    "feature": "power_factor_min60",
+    "mean_drop": 0.002969247083775173,
+    "std_drop": 0.0008542273576242096
+  },
+  {
+    "feature": "temperature_m60",
+    "mean_drop": 0.0029692470837751504,
+    "std_drop": 0.0003604821147820809
+  },
+  {
+    "feature": "ferrous_particles_s60",
+    "mean_drop": 0.0028278543655001266,
+    "std_drop": 0.0009217677490565754
+  },
+  {
+    "feature": "density",
+    "mean_drop": 0.002757158006362648,
+    "std_drop": 0.0004689465946066083
+  },
+  {
+    "feature": "power_factor",
+    "mean_drop": 0.0026157652880876457,
+    "std_drop": 0.0006556110636617355
+  },
+  {
+    "feature": "oil_temp_max60",
+    "mean_drop": 0.00219158713326264,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "seal_temp_max60",
+    "mean_drop": 0.00219158713326264,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "seal_temp_m60",
+    "mean_drop": 0.0020501944149876384,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "current_A_max60",
+    "mean_drop": 0.0020501944149876384,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "oil_water_ppm_max60",
+    "mean_drop": 0.0020501944149876163,
+    "std_drop": 0.0004689465946066384
+  },
+  {
+    "feature": "torque_est_m60",
+    "mean_drop": 0.001979498055850115,
+    "std_drop": 0.0004241781548250352
+  },
+  {
+    "feature": "bearing_temp_NDE_min60",
+    "mean_drop": 0.001979498055850115,
+    "std_drop": 0.00042417815482503527
+  },
+  {
+    "feature": "ultrasonic_noise",
+    "mean_drop": 0.001979498055850093,
+    "std_drop": 0.0005290431087697551
+  },
+  {
+    "feature": "pressure_s60",
+    "mean_drop": 0.0019088016967126142,
+    "std_drop": 0.0002827854365500426
+  },
+  {
+    "feature": "overall_vibration_m60",
+    "mean_drop": 0.0018381053375751133,
+    "std_drop": 0.00026452155438488943
+  },
+  {
+    "feature": "motor_current",
+    "mean_drop": 0.0018381053375750912,
+    "std_drop": 0.0005655708731000548
+  },
+  {
+    "feature": "power_factor_max60",
+    "mean_drop": 0.0018381053375750912,
+    "std_drop": 0.0006081530764964881
+  },
+  {
+    "feature": "leakage_rate_m60",
+    "mean_drop": 0.0017674089784376346,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "amps_per_flow",
+    "mean_drop": 0.00176740897843759,
+    "std_drop": 0.00044712303431157247
+  },
+  {
+    "feature": "current_A_s60",
+    "mean_drop": 0.0016967126193000893,
+    "std_drop": 0.0002645215543849013
+  },
+  {
+    "feature": "overall_vibration",
+    "mean_drop": 0.0016260162601626105,
+    "std_drop": 0.0006556110636617785
+  },
+  {
+    "feature": "temperature",
+    "mean_drop": 0.0016260162601625882,
+    "std_drop": 0.00017317000655947876
+  },
+  {
+    "feature": "seal_temp_s60",
+    "mean_drop": 0.0015553199010250873,
+    "std_drop": 0.0002827854365500537
+  },
+  {
+    "feature": "density_m60",
+    "mean_drop": 0.0014846235418875865,
+    "std_drop": 0.0006854266323671187
+  },
+  {
+    "feature": "seal_flush_pressure_s60",
+    "mean_drop": 0.0014846235418875865,
+    "std_drop": 0.0004122270692715207
+  },
+  {
+    "feature": "torque_est_max60",
+    "mean_drop": 0.0014846235418875865,
+    "std_drop": 0.0004122270692715207
+  },
+  {
+    "feature": "pressure_m60",
+    "mean_drop": 0.0014846235418875641,
+    "std_drop": 0.0002645215543849013
+  },
+  {
+    "feature": "bearing_temp_DE_min60",
+    "mean_drop": 0.0014846235418875641,
+    "std_drop": 0.0004122270692715245
+  },
+  {
+    "feature": "torque_est_s60",
+    "mean_drop": 0.0014139271827500633,
+    "std_drop": 0.0004998987495133117
+  },
+  {
+    "feature": "temperature_s60",
+    "mean_drop": 0.001413927182750041,
+    "std_drop": 0.00022356151715579502
+  },
+  {
+    "feature": "ultrasonic_noise_s60",
+    "mean_drop": 0.001413927182750041,
+    "std_drop": 0.00022356151715579502
+  },
+  {
+    "feature": "oil_TAN_max60",
+    "mean_drop": 0.001413927182750041,
+    "std_drop": 0.0006706845514673148
+  },
+  {
+    "feature": "oil_temp_min60",
+    "mean_drop": 0.0013432308236125622,
+    "std_drop": 0.0004122270692715207
+  },
+  {
+    "feature": "density_max60",
+    "mean_drop": 0.00134323082361254,
+    "std_drop": 0.00026452155438488943
+  },
+  {
+    "feature": "oil_TAN_s60",
+    "mean_drop": 0.001343230823612518,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "frequency_s60",
+    "mean_drop": 0.0012725344644750614,
+    "std_drop": 0.00042417815482505744
+  },
+  {
+    "feature": "overall_vibration_min60",
+    "mean_drop": 0.0012725344644750614,
+    "std_drop": 0.0005290431087697492
+  },
+  {
+    "feature": "suction_pressure_min60",
+    "mean_drop": 0.0012725344644750614,
+    "std_drop": 0.00042417815482505744
+  },
+  {
+    "feature": "overall_vibration_max60",
+    "mean_drop": 0.0012725344644750614,
+    "std_drop": 0.0005290431087697492
+  },
+  {
+    "feature": "rpm_max60",
+    "mean_drop": 0.0012725344644750614,
+    "std_drop": 0.00042417815482505744
+  },
+  {
+    "feature": "gas_volume_fraction_m60",
+    "mean_drop": 0.0012725344644750392,
+    "std_drop": 0.00042417815482505007
+  },
+  {
+    "feature": "temperature_max60",
+    "mean_drop": 0.0012725344644750392,
+    "std_drop": 0.00047948603627610397
+  },
+  {
+    "feature": "delta_p_rt_slope60",
+    "mean_drop": 0.0012725344644750392,
+    "std_drop": 0.0006556110636617761
+  },
+  {
+    "feature": "flow_min60",
+    "mean_drop": 0.0012018381053375605,
+    "std_drop": 0.0005290431087697551
+  },
+  {
+    "feature": "current_A",
+    "mean_drop": 0.0012018381053375382,
+    "std_drop": 0.0003604821147821157
+  },
+  {
+    "feature": "rpm",
+    "mean_drop": 0.0012018381053375382,
+    "std_drop": 0.0002827854365500482
+  },
+  {
+    "feature": "viscosity_max60",
+    "mean_drop": 0.0012018381053375382,
+    "std_drop": 0.00047948603627609085
+  },
+  {
+    "feature": "viscosity_slope60",
+    "mean_drop": 0.0012018381053375382,
+    "std_drop": 0.0006163165703132701
+  },
+  {
+    "feature": "frequency",
+    "mean_drop": 0.001201838105337516,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "seal_temp",
+    "mean_drop": 0.001201838105337516,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "casing_temp_m60",
+    "mean_drop": 0.001201838105337516,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "current_B_slope60",
+    "mean_drop": 0.0011311417462000373,
+    "std_drop": 0.0003463400131188895
+  },
+  {
+    "feature": "bearing_temp_NDE_m60",
+    "mean_drop": 0.001131141746200015,
+    "std_drop": 0.0001413927182750019
+  },
+  {
+    "feature": "current_A_min60",
+    "mean_drop": 0.001131141746200015,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "rpm_slope60",
+    "mean_drop": 0.0010604453870625586,
+    "std_drop": 0.0006706845514673265
+  },
+  {
+    "feature": "ultrasonic_noise_slope60",
+    "mean_drop": 0.0010604453870625362,
+    "std_drop": 0.000499898749513296
+  },
+  {
+    "feature": "casing_temp",
+    "mean_drop": 0.0010604453870625141,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "shaft_displacement_s60",
+    "mean_drop": 0.0009897490279250575,
+    "std_drop": 0.0006479428342108154
+  },
+  {
+    "feature": "oil_water_ppm_m60",
+    "mean_drop": 0.0009897490279250133,
+    "std_drop": 0.000519510019678273
+  },
+  {
+    "feature": "noise_dBA_min60",
+    "mean_drop": 0.0009897490279250133,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "ultrasonic_noise_max60",
+    "mean_drop": 0.0009897490279250133,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "bearing_temp_DE_max60",
+    "mean_drop": 0.0009897490279250133,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "motor_current_slope60",
+    "mean_drop": 0.0009897490279250133,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "frequency_slope60",
+    "mean_drop": 0.0009897490279250133,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "viscosity_m60",
+    "mean_drop": 0.0009190526687875566,
+    "std_drop": 0.0006926800262377519
+  },
+  {
+    "feature": "oil_TAN_m60",
+    "mean_drop": 0.0009190526687875344,
+    "std_drop": 0.0005743399367010268
+  },
+  {
+    "feature": "ferrous_particles_m60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.00042417815482500567
+  },
+  {
+    "feature": "oil_temp_m60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.00047948603627606467
+  },
+  {
+    "feature": "overall_vibration_s60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.00042417815482500567
+  },
+  {
+    "feature": "density_min60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "rpm_min60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "oil_temp_slope60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.0003604821147820809
+  },
+  {
+    "feature": "shaft_displacement_slope60",
+    "mean_drop": 0.0009190526687875122,
+    "std_drop": 0.0003604821147820809
+  },
+  {
+    "feature": "current_B",
+    "mean_drop": 0.0008483563096500335,
+    "std_drop": 0.0005290431087697462
+  },
+  {
+    "feature": "noise_dBA_max60",
+    "mean_drop": 0.0008483563096500335,
+    "std_drop": 0.0005290431087697462
+  },
+  {
+    "feature": "flow_slope60",
+    "mean_drop": 0.0008483563096500335,
+    "std_drop": 0.0006556110636617666
+  },
+  {
+    "feature": "suction_pressure",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "current_B_m60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "current_C_s60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "oil_water_ppm_s60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00047948603627606467
+  },
+  {
+    "feature": "oil_TAN_min60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00047948603627606467
+  },
+  {
+    "feature": "amps_per_flow_min60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "oil_water_ppm_slope60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "oil_TAN_slope60",
+    "mean_drop": 0.0008483563096500113,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "pressure",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "delta_p_rt",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "rpm_m60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "bearing_temp_DE_m60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "amps_per_flow_s60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "gas_volume_fraction_min60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "current_B_min60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "pressure_max60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "flow_max60",
+    "mean_drop": 0.0007776599505125104,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "oil_TAN",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0004471230343115198
+  },
+  {
+    "feature": "oil_water_ppm",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.00038721990633095734
+  },
+  {
+    "feature": "torque_est",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "frequency_m60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0004998987495132645
+  },
+  {
+    "feature": "rpm_s60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "gas_volume_fraction_s60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.00038721990633095734
+  },
+  {
+    "feature": "oil_temp_s60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.000316163729586381
+  },
+  {
+    "feature": "temperature_min60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "delta_p_min60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "torque_est_min60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0004471230343115198
+  },
+  {
+    "feature": "casing_temp_max60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.000316163729586381
+  },
+  {
+    "feature": "suction_pressure_max60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0004471230343115198
+  },
+  {
+    "feature": "seal_temp_slope60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.00038721990633095734
+  },
+  {
+    "feature": "noise_dBA_slope60",
+    "mean_drop": 0.0007069635913750094,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "bearing_temp_DE",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "ultrasonic_noise_m60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.00046894659460660823
+  },
+  {
+    "feature": "seal_flush_pressure_m60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "seal_flush_pressure_max60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "shaft_displacement_max60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "bearing_temp_DE_slope60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "casing_temp_slope60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "seal_flush_pressure_slope60",
+    "mean_drop": 0.0006362672322375085,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "current_C",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.0003604821147820809
+  },
+  {
+    "feature": "noise_dBA",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "seal_flush_pressure",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.0002827854365500038
+  },
+  {
+    "feature": "shaft_displacement",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "temp_ok",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "motor_current_m60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "noise_dBA_m60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "bearing_temp_DE_s60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "suction_pressure_s60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00047948603627606467
+  },
+  {
+    "feature": "power_factor_s60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "casing_temp_min60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.0003604821147820809
+  },
+  {
+    "feature": "discharge_pressure_max60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "temperature_slope60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "bearing_temp_NDE_slope60",
+    "mean_drop": 0.0005655708731000075,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "bearing_temp_NDE",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "oil_temp",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "delta_p_m60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00042417815482500567
+  },
+  {
+    "feature": "amps_per_flow_m60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "viscosity_s60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00047948603627606467
+  },
+  {
+    "feature": "noise_dBA_s60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "pressure_min60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.0003604821147820809
+  },
+  {
+    "feature": "motor_current_min60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "current_C_min60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00047948603627606467
+  },
+  {
+    "feature": "delta_p_rt_min60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "delta_p_max60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "current_A_slope60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "power_factor_slope60",
+    "mean_drop": 0.0004948745139625066,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "delta_p",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "discharge_pressure",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "flow",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "viscosity",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "discharge_pressure_m60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "current_C_m60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "shaft_displacement_m60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "bearing_temp_NDE_s60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "casing_temp_s60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "seal_temp_min60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "seal_flush_pressure_min60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "motor_current_max60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "gas_volume_fraction_max60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "frequency_max60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "delta_p_rt_max60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "suction_pressure_slope60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0005195100196782732
+  },
+  {
+    "feature": "discharge_pressure_slope60",
+    "mean_drop": 0.00042417815482500567,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "flow_m60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "current_A_m60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.000316163729586381
+  },
+  {
+    "feature": "flow_s60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.00038721990633095734
+  },
+  {
+    "feature": "ultrasonic_noise_min60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "viscosity_min60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "bearing_temp_NDE_max60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.000316163729586381
+  },
+  {
+    "feature": "amps_per_flow_max60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.00038721990633095734
+  },
+  {
+    "feature": "current_C_slope60",
+    "mean_drop": 0.0003534817956875047,
+    "std_drop": 0.0002235615171557599
+  },
+  {
+    "feature": "suction_pressure_m60",
+    "mean_drop": 0.00028278543655000374,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "motor_current_s60",
+    "mean_drop": 0.00028278543655000374,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "density_s60",
+    "mean_drop": 0.00028278543655000374,
+    "std_drop": 0.000412227069271475
+  },
+  {
+    "feature": "current_B_max60",
+    "mean_drop": 0.00028278543655000374,
+    "std_drop": 0.0003463400131188487
+  },
+  {
+    "feature": "delta_p_slope60",
+    "mean_drop": 0.00028278543655000374,
+    "std_drop": 0.0002645215543848538
+  },
+  {
+    "feature": "discharge_pressure_s60",
+    "mean_drop": 0.00021208907741250284,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "delta_p_rt_s60",
+    "mean_drop": 0.00021208907741250284,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "current_C_max60",
+    "mean_drop": 0.00021208907741250284,
+    "std_drop": 0.0002827854365500038
+  },
+  {
+    "feature": "pressure_slope60",
+    "mean_drop": 0.00021208907741250284,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "amps_per_flow_slope60",
+    "mean_drop": 0.00021208907741250284,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "delta_p_rt_m60",
+    "mean_drop": 0.00014139271827500187,
+    "std_drop": 0.00028278543655000374
+  },
+  {
+    "feature": "delta_p_s60",
+    "mean_drop": 0.00014139271827500187,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "current_B_s60",
+    "mean_drop": 0.00014139271827500187,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "density_slope60",
+    "mean_drop": 0.00014139271827500187,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "torque_est_slope60",
+    "mean_drop": 0.00014139271827500187,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "leakage_rate_slope60",
+    "mean_drop": 0.00014139271827500187,
+    "std_drop": 0.00017317000655942436
+  },
+  {
+    "feature": "leakage_rate",
+    "mean_drop": 7.069635913750094e-05,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "discharge_pressure_min60",
+    "mean_drop": 7.069635913750094e-05,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "shaft_displacement_min60",
+    "mean_drop": 7.069635913750094e-05,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "gas_volume_fraction_slope60",
+    "mean_drop": 7.069635913750094e-05,
+    "std_drop": 0.00014139271827500187
+  },
+  {
+    "feature": "gas_volume_fraction",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "particle_count",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "vib_ok",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "particle_count_m60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "particle_count_s60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "ferrous_particles_min60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "frequency_min60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "oil_water_ppm_min60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "particle_count_min60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "leakage_rate_min60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "particle_count_max60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  },
+  {
+    "feature": "particle_count_slope60",
+    "mean_drop": 0.0,
+    "std_drop": 0.0
+  }
+]

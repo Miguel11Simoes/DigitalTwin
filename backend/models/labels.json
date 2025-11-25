@@ -1,0 +1,17 @@
+[
+  "bearing_unlubricated_moderate",
+  "bearing_wear_moderate",
+  "cavitation_moderate",
+  "electrical_fault_moderate",
+  "fluid_contaminated_moderate",
+  "high_flow_moderate",
+  "high_pressure_moderate",
+  "impeller_wear_moderate",
+  "looseness_moderate",
+  "low_flow_moderate",
+  "misalignment_moderate",
+  "motor_overload_moderate",
+  "normal",
+  "recirculation_moderate",
+  "unbalance_moderate"
+]
