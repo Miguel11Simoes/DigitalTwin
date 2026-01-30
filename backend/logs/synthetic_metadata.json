@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-01-17T15:03:46.927255",
+  "n_assets": 8,
+  "samples_per_asset": 10000,
+  "total_samples": 80000,
+  "sampling_rate": 1000,
+  "rpm_nominal": 1800,
+  "modes": [
+    "normal_operation",
+    "bearing_wear",
+    "cavitation",
+    "imbalance",
+    "misalignment"
+  ],
+  "severities": [
+    "normal",
+    "early",
+    "moderate",
+    "severe",
+    "failure"
+  ],
+  "spectral_signatures": {
+    "normal_operation": "baseline + low noise",
+    "bearing_wear": "high freq (120-240Hz) + sidebands + noise",
+    "cavitation": "broadband noise + burst peaks",
+    "imbalance": "1\u00d7 RPM dominant (30Hz)",
+    "misalignment": "2\u00d7 RPM dominant (60Hz) + 3\u00d7 RPM"
+  }
+}

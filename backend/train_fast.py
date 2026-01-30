@@ -22,7 +22,13 @@ def main():
     print("FAST TRAINING - STRATIFIED SPLIT")
     print("=" * 70)
     
-    df = pd.read_csv('logs/sensors_log.csv', low_memory=False)
+    # Use v2 dataset if available
+    if Path('logs/sensors_log_v2.csv').exists():
+        df = pd.read_csv('logs/sensors_log_v2.csv', low_memory=False)
+        print("[INFO] Using sensors_log_v2.csv")
+    else:
+        df = pd.read_csv('logs/sensors_log.csv', low_memory=False)
+        print("[WARN] Using original sensors_log.csv")
     print(f"\n[INFO] Dataset: {len(df)} linhas")
     
     sensor_cols = ['overall_vibration', 'vibration_x', 'vibration_y', 'vibration_z', 
@@ -32,8 +38,11 @@ def main():
     X = df[sensor_cols].fillna(0).values.astype(np.float32)
     y_sev = df['severity'].values
     y_mode = df['mode'].values
-    y_rul = df['rul_minutes'].fillna(500).values / 1000.0
+    # RUL: normalize by max value in dataset to get 0-1 range
+    rul_max = df['rul_minutes'].max()
+    y_rul = df['rul_minutes'].fillna(0).values / max(rul_max, 1)
     y_health = df['health_index'].fillna(50).values / 100.0
+    print(f"[INFO] RUL max: {rul_max:.0f} minutes")
     
     # Stratified split using severity (main concern)
     X_train, X_test, y_sev_tr, y_sev_te, y_mode_tr, y_mode_te, y_rul_tr, y_rul_te, y_health_tr, y_health_te = train_test_split(

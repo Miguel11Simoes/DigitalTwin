@@ -1,0 +1,53 @@
+======================================================================
+FAST TRAINING - STRATIFIED SPLIT
+======================================================================
+
+[INFO] Dataset: 80000 linhas
+[INFO] Train: 64000, Test: 16000
+
+[TRAINING] RandomForest para SEVERITY...
+           Test acc: 0.8427
+
+[TRAINING] RandomForest para MODE...
+           Test acc: 0.9945
+
+======================================================================
+FINAL RESULTS
+======================================================================
+  RUL MAE:      0.1411   (target < 0.20)  ✓
+  Health MAE:   0.14%   (target < 10%)   ✓
+  Severity acc: 0.8427   (target > 0.90)  ✗
+  Mode acc:     0.9945   (target > 0.90)  ✓
+======================================================================
+
+TARGETS MET: 3/4
+
+[SAVED] Models to models/
+
+=== SEVERITY REPORT ===
+              precision    recall  f1-score   support
+
+       early       0.86      0.84      0.85      3200
+     failure       0.88      0.83      0.85      3200
+    moderate       0.84      0.85      0.84      3200
+      normal       0.79      0.85      0.82      3200
+      severe       0.84      0.85      0.85      3200
+
+    accuracy                           0.84     16000
+   macro avg       0.84      0.84      0.84     16000
+weighted avg       0.84      0.84      0.84     16000
+
+
+=== MODE REPORT ===
+                  precision    recall  f1-score   support
+
+    bearing_wear       1.00      0.98      0.99      3181
+      cavitation       1.00      1.00      1.00      3220
+       imbalance       1.00      1.00      1.00      3215
+    misalignment       1.00      1.00      1.00      3227
+normal_operation       0.98      1.00      0.99      3157
+
+        accuracy                           0.99     16000
+       macro avg       0.99      0.99      0.99     16000
+    weighted avg       0.99      0.99      0.99     16000
+

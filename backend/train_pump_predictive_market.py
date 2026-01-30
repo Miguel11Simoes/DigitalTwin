@@ -111,14 +111,14 @@ class Cfg:
     min_sensors: int = 2
     aux_per_sensor: int = 10  # FIXED: 3 absolutas (abs_mean, abs_std, abs_rms) + 7 normalizadas
 
-    # Treino - ITERATION 5: Otimizado para convergência rápida
-    epochs: int = 50
-    batch_size: int = 64  # Maior para treino mais rápido
-    lr: float = 1e-3  # Maior para convergência rápida
+    # Treino - ITERATION 6: Otimizado para dataset v2 (good separability)
+    epochs: int = 30  # Dataset v2 converge mais rápido
+    batch_size: int = 128  # Maior batch para treino mais rápido
+    lr: float = 5e-4  # Learning rate moderado
     weight_decay: float = 1e-5
-    l2_reg: float = 5e-5  # Menos regularização
-    dropout: float = 0.25  # Menos dropout para convergir
-    patience: int = 15
+    l2_reg: float = 1e-5  # Menos regularização (dados já separáveis)
+    dropout: float = 0.20  # Menos dropout
+    patience: int = 10  # Early stopping mais agressivo
 
     # Robustez (curriculum: ligar depois epoch 10)
     sensor_dropout_rate: float = 0.0  # CRITICAL FIX: start at 0, increase after epoch 10
@@ -144,8 +144,16 @@ def set_seeds(seed: int) -> None:
 # --------------------------
 def discover_csvs() -> List[Path]:
     files: List[Path] = []
+    # PRIORITY: Use v2 dataset (non-overlapping severity ranges)
+    p_v2 = LOGS_DIR / "sensors_log_v2.csv"
+    if p_v2.exists():
+        print("[INFO] Using improved dataset v2 (non-overlapping severity)")
+        files.append(p_v2)
+        return files
+    # Fallback to original
     p = LOGS_DIR / "sensors_log.csv"
     if p.exists():
+        print("[WARN] Using original dataset (may have overlapping severity ranges)")
         files.append(p)
     if ARCHIVE_DIR.exists():
         files.extend(sorted(ARCHIVE_DIR.glob("sensors_log_*.csv")))

@@ -1,0 +1,236 @@
+{
+  "test_results": {
+    "health_loss": 0.03521091118454933,
+    "health_mae": 0.898601233959198,
+    "loss": 98.47704315185547,
+    "mode_acc": 0.12364425510168076,
+    "mode_loss": 19.910350799560547,
+    "mode_top2": 0.12364425510168076,
+    "rul_loss": 0.06884334981441498,
+    "rul_mae": 0.9054253697395325,
+    "severity_acc": 1.0,
+    "severity_loss": 0.06532111018896103
+  },
+  "derived_metrics": {
+    "severity_macro_f1": 1.0,
+    "mode_macro_f1": 0.05501930501930502,
+    "critical_recall_severe_failure": 1.0,
+    "health_mae_percent": 89.8601233959198,
+    "rul_mae_hours_over_1000h": 905.4253697395325
+  },
+  "labels": {
+    "severity": [
+      "normal",
+      "early",
+      "moderate",
+      "severe",
+      "failure"
+    ],
+    "mode": [
+      "bearing_wear",
+      "cavitation",
+      "imbalance",
+      "misalignment",
+      "normal_operation"
+    ],
+    "sensor_columns_ranked": [
+      "overall_vibration",
+      "vibration_x",
+      "vibration_y",
+      "vibration_z",
+      "motor_current",
+      "pressure",
+      "flow",
+      "temperature"
+    ],
+    "notes": "O modelo usa 'sensor_mask' para aceitar N sensores variáveis até max_sensors."
+  },
+  "confusion_matrices": {
+    "severity": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        461
+      ]
+    ],
+    "mode": [
+      [
+        0,
+        0,
+        58,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        115,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        57,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        231,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "classification_reports": {
+    "severity": {
+      "normal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "early": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "moderate": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "severe": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "failure": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 461.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 0.2,
+        "recall": 0.2,
+        "f1-score": 0.2,
+        "support": 461.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 461.0
+      }
+    },
+    "mode": {
+      "bearing_wear": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 58.0
+      },
+      "cavitation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 115.0
+      },
+      "imbalance": {
+        "precision": 0.12364425162689804,
+        "recall": 1.0,
+        "f1-score": 0.22007722007722008,
+        "support": 57.0
+      },
+      "misalignment": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 231.0
+      },
+      "normal_operation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.12364425162689804,
+      "macro avg": {
+        "precision": 0.02472885032537961,
+        "recall": 0.2,
+        "f1-score": 0.044015444015444015,
+        "support": 461.0
+      },
+      "weighted avg": {
+        "precision": 0.01528790096037568,
+        "recall": 0.12364425162689804,
+        "f1-score": 0.02721128317657602,
+        "support": 461.0
+      }
+    }
+  },
+  "config": {
+    "seq_len": 128,
+    "hop": 16,
+    "frame_len": 64,
+    "frame_hop": 32,
+    "t_window": 96,
+    "n_mels": 96,
+    "max_sensors": 16,
+    "min_sensors": 2,
+    "aux_per_sensor": 10,
+    "sensor_dropout_rate": 0.0,
+    "enable_spec_augment": false,
+    "split_group_col": "asset_id",
+    "n_windows": {
+      "train": 2668,
+      "val": 503,
+      "test": 461
+    },
+    "note": "Se os targets forem sintéticos, estes resultados medem consistência do dataset, não prova campo."
+  }
+}

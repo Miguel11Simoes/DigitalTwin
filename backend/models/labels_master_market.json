@@ -1,0 +1,27 @@
+{
+  "severity": [
+    "normal",
+    "early",
+    "moderate",
+    "severe",
+    "failure"
+  ],
+  "mode": [
+    "bearing_wear",
+    "cavitation",
+    "imbalance",
+    "misalignment",
+    "normal_operation"
+  ],
+  "sensor_columns_ranked": [
+    "overall_vibration",
+    "vibration_x",
+    "vibration_y",
+    "vibration_z",
+    "motor_current",
+    "pressure",
+    "flow",
+    "temperature"
+  ],
+  "notes": "O modelo usa 'sensor_mask' para aceitar N sensores variáveis até max_sensors."
+}

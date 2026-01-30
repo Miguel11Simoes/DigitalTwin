@@ -1,0 +1,27 @@
+{
+  "test_results": {
+    "rul_mae": 0.13741265856189155,
+    "health_mae_percent": 0.13869268579720714,
+    "severity_acc": 0.8671666666666666,
+    "mode_acc": 0.9665
+  },
+  "val_results": {
+    "rul_mae": 0.13930269071412218,
+    "health_mae_percent": 0.14037396551347525,
+    "severity_acc": 0.8663333333333333,
+    "mode_acc": 0.9375
+  },
+  "targets_met": {
+    "rul": true,
+    "health": true,
+    "severity": false,
+    "mode": true
+  },
+  "models_used": {
+    "severity": "HistGradientBoostingClassifier",
+    "mode": "RandomForestClassifier",
+    "rul": "Ridge Regression",
+    "health": "Ridge Regression"
+  },
+  "training_time_seconds": 244.7451775074005
+}

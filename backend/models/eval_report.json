@@ -1,8 +1,8 @@
 {
   "test_results": {
-    "rul_mae": 0.08844017747679293,
-    "health_mae_percent": 7.241561942597363,
-    "severity_acc": 0.9985,
+    "rul_mae": 0.040038136532229915,
+    "health_mae_percent": 2.4476094060074076,
+    "severity_acc": 0.9816875,
     "mode_acc": 1.0
   },
   "targets_met": {
@@ -10,6 +10,5 @@
     "health": true,
     "severity": true,
     "mode": true
-  },
-  "all_targets_met": true
+  }
 }
