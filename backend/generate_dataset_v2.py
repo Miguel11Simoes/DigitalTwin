@@ -175,8 +175,8 @@ def generate_dataset(n_assets=8, samples_per_asset=10000):
     
     df = pd.DataFrame(rows)
     
-    # Shuffle
-    df = df.sample(frac=1, random_state=SEED).reset_index(drop=True)
+    # Sort by asset_id and timestamp (preserva sequência temporal para CNN windowing)
+    df = df.sort_values(['asset_id', 'timestamp']).reset_index(drop=True)
     
     return df
 
