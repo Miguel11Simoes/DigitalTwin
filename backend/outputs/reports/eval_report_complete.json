@@ -1,0 +1,569 @@
+{
+  "timestamp": "2026-01-31T23:19:54.372977",
+  "model_path": "C:\\Users\\msmig\\Desktop\\Tese\\DigitalTwin\\backend\\models\\pump_cnn2d_v2.keras",
+  "dataset_contract": {
+    "dataset_name": "sensors_log_v2.csv",
+    "total_samples": 80000,
+    "n_assets_train": 5,
+    "n_assets_val": 1,
+    "n_assets_test": 2,
+    "train_assets": [
+      "pump_002",
+      "pump_006",
+      "pump_001",
+      "pump_008",
+      "pump_003"
+    ],
+    "val_assets": [
+      "pump_005"
+    ],
+    "test_assets": [
+      "pump_004",
+      "pump_007"
+    ],
+    "time_range_train": {
+      "min": "2025-01-01 00:00:00",
+      "max": "2025-09-02 17:15:00"
+    },
+    "time_range_val": {
+      "min": "2025-05-01 00:00:00",
+      "max": "2025-06-04 17:15:00"
+    },
+    "time_range_test": {
+      "min": "2025-04-01 00:00:00",
+      "max": "2025-08-03 17:15:00"
+    },
+    "sensor_cols": [
+      "overall_vibration",
+      "vibration_x",
+      "vibration_y",
+      "vibration_z",
+      "motor_current",
+      "pressure",
+      "flow",
+      "temperature"
+    ],
+    "severity_distribution_train": {
+      "normal": 12140,
+      "moderate": 11180,
+      "early": 10225,
+      "severe": 9543,
+      "failure": 6912
+    },
+    "severity_distribution_val": {
+      "normal": 2415,
+      "moderate": 2223,
+      "early": 2061,
+      "severe": 1911,
+      "failure": 1390
+    },
+    "severity_distribution_test": {
+      "normal": 4879,
+      "moderate": 4436,
+      "early": 4095,
+      "severe": 3816,
+      "failure": 2774
+    },
+    "mode_distribution_train": {
+      "misalignment": 24417,
+      "normal_operation": 13115,
+      "imbalance": 7753,
+      "cavitation": 2360,
+      "bearing_wear": 2355
+    },
+    "mode_distribution_val": {
+      "cavitation": 6029,
+      "normal_operation": 2584,
+      "bearing_wear": 484,
+      "imbalance": 454,
+      "misalignment": 449
+    },
+    "mode_distribution_test": {
+      "bearing_wear": 6483,
+      "cavitation": 6419,
+      "normal_operation": 5229,
+      "misalignment": 938,
+      "imbalance": 931
+    },
+    "rul_max_train": 50000.0,
+    "scaler_mean": [
+      1.474055231541196,
+      0.5791185137328603,
+      0.5707387440200048,
+      0.3240829483238471,
+      17.590503530602543,
+      1.955249904949725,
+      84.41065970951772,
+      56.58588664096483
+    ],
+    "scaler_std": [
+      0.8673623976399768,
+      0.41092440683347126,
+      0.391871587053422,
+      0.36728177640059045,
+      1.73962807270615,
+      0.35968284028398273,
+      10.386653611988915,
+      7.456903840257366
+    ],
+    "severity_labels": [
+      "early",
+      "failure",
+      "moderate",
+      "normal",
+      "severe"
+    ],
+    "mode_labels": [
+      "bearing_wear",
+      "cavitation",
+      "imbalance",
+      "misalignment",
+      "normal_operation"
+    ]
+  },
+  "anti_leakage": {
+    "asset_split": {
+      "ok": true,
+      "n_train_assets": 5,
+      "n_val_assets": 1,
+      "n_test_assets": 2,
+      "train_val_intersection": [],
+      "train_test_intersection": [],
+      "val_test_intersection": []
+    },
+    "window_alignment": {
+      "ok": true,
+      "n_windows_checked": 2486
+    },
+    "leaky_features": {
+      "suspicious_cols_found": [
+        "health_index"
+      ],
+      "index_only_baseline": {
+        "mae": 13311.150264833052,
+        "r2": 0.0017275108111456383,
+        "warning": false
+      },
+      "sensors_only_baseline": {
+        "mae": 937.7663966847855,
+        "note": "Este valor deve ser similar ao modelo final se n\u00e3o houver leakage"
+      }
+    }
+  },
+  "performance": {
+    "rul": {
+      "mae_norm": 0.024454109370708466,
+      "mae_minutes": 1222.7054685354233,
+      "mae_near_failure_norm": 0.012609418481588364,
+      "mae_near_failure_minutes": 630.4709240794182,
+      "near_failure_threshold": 0.2,
+      "rul_max_train": 50000.0,
+      "mae_by_bin": {
+        "0-10%": {
+          "mae_norm": 0.00905131921172142,
+          "mae_minutes": 452.565960586071,
+          "n_samples": 407
+        },
+        "10-20%": {
+          "mae_norm": 0.017265839502215385,
+          "mae_minutes": 863.2919751107693,
+          "n_samples": 311
+        },
+        "20-40%": {
+          "mae_norm": 0.029084457084536552,
+          "mae_minutes": 1454.2228542268276,
+          "n_samples": 509
+        },
+        "40-60%": {
+          "mae_norm": 0.022398384287953377,
+          "mae_minutes": 1119.9192143976688,
+          "n_samples": 432
+        },
+        "60-80%": {
+          "mae_norm": 0.02938259206712246,
+          "mae_minutes": 1469.129603356123,
+          "n_samples": 413
+        },
+        "80-100%": {
+          "mae_norm": 0.03653200715780258,
+          "mae_minutes": 1826.600357890129,
+          "n_samples": 414
+        }
+      }
+    },
+    "health": {
+      "mae": 0.022751836106181145,
+      "mae_percent": 2.2751836106181145,
+      "mae_by_bin": {
+        "0-30%": {
+          "mae": 0.024205323308706284,
+          "mae_percent": 2.4205323308706284,
+          "n_samples": 534
+        },
+        "30-50%": {
+          "mae": 0.01576770283281803,
+          "mae_percent": 1.5767702832818031,
+          "n_samples": 392
+        },
+        "50-70%": {
+          "mae": 0.03167804703116417,
+          "mae_percent": 3.167804703116417,
+          "n_samples": 455
+        },
+        "70-90%": {
+          "mae": 0.024617673829197884,
+          "mae_percent": 2.4617673829197884,
+          "n_samples": 577
+        },
+        "90-100%": {
+          "mae": 0.01509938109666109,
+          "mae_percent": 1.509938109666109,
+          "n_samples": 450
+        }
+      }
+    },
+    "severity": {
+      "accuracy": 0.9223652453740949,
+      "f1_macro": 0.9181018814258255,
+      "f1_weighted": 0.9225349425453653,
+      "classification_report": {
+        "early": {
+          "precision": 0.897003745318352,
+          "recall": 0.958,
+          "f1-score": 0.9264990328820116,
+          "support": 500.0
+        },
+        "failure": {
+          "precision": 0.9694915254237289,
+          "recall": 0.8125,
+          "f1-score": 0.884080370942813,
+          "support": 352.0
+        },
+        "moderate": {
+          "precision": 0.9570093457943926,
+          "recall": 0.924187725631769,
+          "f1-score": 0.9403122130394858,
+          "support": 554.0
+        },
+        "normal": {
+          "precision": 0.9693877551020408,
+          "recall": 0.9421487603305785,
+          "f1-score": 0.9555741827326069,
+          "support": 605.0
+        },
+        "severe": {
+          "precision": 0.8352059925093633,
+          "recall": 0.9389473684210526,
+          "f1-score": 0.8840436075322101,
+          "support": 475.0
+        },
+        "accuracy": 0.9223652453740949,
+        "macro avg": {
+          "precision": 0.9256196728295756,
+          "recall": 0.91515677087668,
+          "f1-score": 0.9181018814258255,
+          "support": 2486.0
+        },
+        "weighted avg": {
+          "precision": 0.9264475082289237,
+          "recall": 0.9223652453740949,
+          "f1-score": 0.9225349425453653,
+          "support": 2486.0
+        }
+      },
+      "critical_classes_metrics": {
+        "failure": {
+          "precision": 0.9694915254237289,
+          "recall": 0.8125,
+          "f1": 0.884080370942813,
+          "support": 352.0
+        },
+        "severe": {
+          "precision": 0.8352059925093633,
+          "recall": 0.9389473684210526,
+          "f1": 0.8840436075322101,
+          "support": 475.0
+        }
+      },
+      "pr_auc_per_class": {
+        "early": 0.984113887922492,
+        "failure": 0.9751821063604903,
+        "moderate": 0.9862537837354072,
+        "normal": 0.9951454986857008,
+        "severe": 0.95819175614587
+      },
+      "confusion_matrix": [
+        [
+          479,
+          0,
+          3,
+          18,
+          0
+        ],
+        [
+          0,
+          286,
+          0,
+          0,
+          66
+        ],
+        [
+          20,
+          0,
+          512,
+          0,
+          22
+        ],
+        [
+          35,
+          0,
+          0,
+          570,
+          0
+        ],
+        [
+          0,
+          9,
+          20,
+          0,
+          446
+        ]
+      ],
+      "labels": [
+        "early",
+        "failure",
+        "moderate",
+        "normal",
+        "severe"
+      ]
+    },
+    "mode": {
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "classification_report": {
+        "bearing_wear": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 817.0
+        },
+        "cavitation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 808.0
+        },
+        "imbalance": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 102.0
+        },
+        "misalignment": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 116.0
+        },
+        "normal_operation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 643.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2486.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2486.0
+        }
+      },
+      "critical_classes_metrics": {},
+      "pr_auc_per_class": {
+        "bearing_wear": 1.0,
+        "cavitation": 1.0,
+        "imbalance": 0.9999999999999998,
+        "misalignment": 1.0,
+        "normal_operation": 1.0
+      },
+      "confusion_matrix": [
+        [
+          817,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          808,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          102,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          116,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          643
+        ]
+      ],
+      "labels": [
+        "bearing_wear",
+        "cavitation",
+        "imbalance",
+        "misalignment",
+        "normal_operation"
+      ]
+    }
+  },
+  "stress_tests": {
+    "stress_tests": {
+      "sensor_dropout": {
+        "severity_acc": 0.9078841512469831,
+        "mode_acc": 1.0,
+        "rul_mae": 0.026224806904792786,
+        "health_mae": 0.02452198602259159,
+        "degradation": {
+          "severity_acc": 0.014481094127111849,
+          "mode_acc": 0.0,
+          "rul_mae": 0.00177069753408432,
+          "health_mae": 0.0017701499164104462
+        }
+      },
+      "noise": {
+        "severity_acc": 0.9267900241351569,
+        "mode_acc": 1.0,
+        "rul_mae": 0.024005144834518433,
+        "health_mae": 0.023686744272708893,
+        "degradation": {
+          "severity_acc": -0.004424778761061954,
+          "mode_acc": 0.0,
+          "rul_mae": -0.00044896453619003296,
+          "health_mae": 0.0009349081665277481
+        }
+      },
+      "gain_drift": {
+        "severity_acc": 0.917135961383749,
+        "mode_acc": 1.0,
+        "rul_mae": 0.02731051854789257,
+        "health_mae": 0.026557262986898422,
+        "degradation": {
+          "severity_acc": 0.005229283990345945,
+          "mode_acc": 0.0,
+          "rul_mae": 0.002856409177184105,
+          "health_mae": 0.0038054268807172775
+        }
+      },
+      "offset_drift": {
+        "severity_acc": 0.9247787610619469,
+        "mode_acc": 1.0,
+        "rul_mae": 0.024599043652415276,
+        "health_mae": 0.023431045934557915,
+        "degradation": {
+          "severity_acc": -0.002413515687851975,
+          "mode_acc": 0.0,
+          "rul_mae": 0.00014493428170681,
+          "health_mae": 0.00067920982837677
+        }
+      },
+      "clipping": {
+        "severity_acc": 0.915526950925181,
+        "mode_acc": 1.0,
+        "rul_mae": 0.024756966158747673,
+        "health_mae": 0.024623459205031395,
+        "degradation": {
+          "severity_acc": 0.006838294448913929,
+          "mode_acc": 0.0,
+          "rul_mae": 0.00030285678803920746,
+          "health_mae": 0.0018716230988502502
+        }
+      }
+    }
+  },
+  "operational": {
+    "false_alarms": {
+      "threshold": 0.5,
+      "hysteresis_windows": 3,
+      "simple": {
+        "fp_count": 22,
+        "fp_rate": 0.013261000602772756,
+        "fp_per_day_avg": 1.592920353982301,
+        "fp_per_day_std": 0.0,
+        "fp_per_day_p95": 1.592920353982301
+      },
+      "hysteresis": {
+        "fp_count": 13,
+        "fp_rate": 0.007836045810729355,
+        "fp_per_day_avg": 0.9412711182622686,
+        "fp_per_day_std": 0.07240547063555919,
+        "fp_per_day_p95": 1.006436041834272
+      },
+      "by_asset": {
+        "pump_004": {
+          "fp_simple": 11,
+          "fp_hysteresis": 6,
+          "total": 1243
+        },
+        "pump_007": {
+          "fp_simple": 11,
+          "fp_hysteresis": 7,
+          "total": 1243
+        }
+      }
+    }
+  },
+  "visualizations": {
+    "confusion_severity": "C:\\Users\\msmig\\Desktop\\Tese\\DigitalTwin\\backend\\outputs\\reports\\confusion_matrix_severity.png",
+    "confusion_mode": "C:\\Users\\msmig\\Desktop\\Tese\\DigitalTwin\\backend\\outputs\\reports\\confusion_matrix_mode.png",
+    "pr_curve": "C:\\Users\\msmig\\Desktop\\Tese\\DigitalTwin\\backend\\outputs\\reports\\pr_curve_critical.png",
+    "rul_bins": "C:\\Users\\msmig\\Desktop\\Tese\\DigitalTwin\\backend\\outputs\\reports\\rul_error_bins.png",
+    "stress": "C:\\Users\\msmig\\Desktop\\Tese\\DigitalTwin\\backend\\outputs\\reports\\stress_summary.png"
+  },
+  "targets": {
+    "severity_acc": {
+      "target": 0.9,
+      "achieved": 0.9223652453740949,
+      "met": true
+    },
+    "mode_acc": {
+      "target": 0.9,
+      "achieved": 1.0,
+      "met": true
+    },
+    "rul_mae": {
+      "target": 0.2,
+      "achieved": 0.024454109370708466,
+      "met": true
+    },
+    "health_mae": {
+      "target": 0.1,
+      "achieved": 0.022751836106181145,
+      "met": true
+    }
+  },
+  "all_targets_met": true
+}

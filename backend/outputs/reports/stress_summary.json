@@ -1,0 +1,64 @@
+{
+  "stress_tests": {
+    "sensor_dropout": {
+      "severity_acc": 0.9078841512469831,
+      "mode_acc": 1.0,
+      "rul_mae": 0.026224806904792786,
+      "health_mae": 0.02452198602259159,
+      "degradation": {
+        "severity_acc": 0.014481094127111849,
+        "mode_acc": 0.0,
+        "rul_mae": 0.00177069753408432,
+        "health_mae": 0.0017701499164104462
+      }
+    },
+    "noise": {
+      "severity_acc": 0.9267900241351569,
+      "mode_acc": 1.0,
+      "rul_mae": 0.024005144834518433,
+      "health_mae": 0.023686744272708893,
+      "degradation": {
+        "severity_acc": -0.004424778761061954,
+        "mode_acc": 0.0,
+        "rul_mae": -0.00044896453619003296,
+        "health_mae": 0.0009349081665277481
+      }
+    },
+    "gain_drift": {
+      "severity_acc": 0.917135961383749,
+      "mode_acc": 1.0,
+      "rul_mae": 0.02731051854789257,
+      "health_mae": 0.026557262986898422,
+      "degradation": {
+        "severity_acc": 0.005229283990345945,
+        "mode_acc": 0.0,
+        "rul_mae": 0.002856409177184105,
+        "health_mae": 0.0038054268807172775
+      }
+    },
+    "offset_drift": {
+      "severity_acc": 0.9247787610619469,
+      "mode_acc": 1.0,
+      "rul_mae": 0.024599043652415276,
+      "health_mae": 0.023431045934557915,
+      "degradation": {
+        "severity_acc": -0.002413515687851975,
+        "mode_acc": 0.0,
+        "rul_mae": 0.00014493428170681,
+        "health_mae": 0.00067920982837677
+      }
+    },
+    "clipping": {
+      "severity_acc": 0.915526950925181,
+      "mode_acc": 1.0,
+      "rul_mae": 0.024756966158747673,
+      "health_mae": 0.024623459205031395,
+      "degradation": {
+        "severity_acc": 0.006838294448913929,
+        "mode_acc": 0.0,
+        "rul_mae": 0.00030285678803920746,
+        "health_mae": 0.0018716230988502502
+      }
+    }
+  }
+}
