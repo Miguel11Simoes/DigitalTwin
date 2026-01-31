@@ -1,0 +1,137 @@
+{
+  "n_windows": 1244,
+  "spec_shape": [
+    1244,
+    4,
+    17,
+    9,
+    1
+  ],
+  "aux_shape": [
+    1244,
+    98
+  ],
+  "fast_cols": [
+    "overall_vibration",
+    "vibration_x",
+    "vibration_y",
+    "vibration_z"
+  ],
+  "slow_cols": [
+    "suction_pressure",
+    "discharge_pressure",
+    "delta_p",
+    "flow",
+    "valve_position",
+    "pump_speed_rpm",
+    "head",
+    "motor_current",
+    "voltage_rms",
+    "power_kw",
+    "power_factor",
+    "motor_temperature",
+    "fluid_temperature",
+    "density",
+    "hydraulic_power",
+    "efficiency_est"
+  ],
+  "context_cols": [
+    "run_state",
+    "ambient_temperature"
+  ],
+  "n_freq": 17,
+  "n_frames": 9,
+  "scaler": {
+    "mean": {
+      "overall_vibration": 1.7466708986949335,
+      "vibration_x": 0.6524292919667279,
+      "vibration_y": 0.6171784618157471,
+      "vibration_z": 0.4778365422703524,
+      "suction_pressure": 101331.1211816583,
+      "discharge_pressure": 474626.4215870862,
+      "delta_p": 373295.3004054279,
+      "flow": 0.02805380036351196,
+      "valve_position": 80.35660091766445,
+      "pump_speed_rpm": 1384.0890607714373,
+      "head": 38.155010301027595,
+      "motor_current": 24.669562810542896,
+      "voltage_rms": 399.96705826182335,
+      "power_kw": 14.50991248334696,
+      "power_factor": 0.8025830396426294,
+      "motor_temperature": 45.43468315179461,
+      "fluid_temperature": 21.32934897363008,
+      "density": 997.3345924494103,
+      "hydraulic_power": 10.980074904711037,
+      "efficiency_est": 72.38813925376621
+    },
+    "std": {
+      "overall_vibration": 1.2210655169968907,
+      "vibration_x": 0.6096373105846572,
+      "vibration_y": 0.5062192654588444,
+      "vibration_z": 0.4385272150358045,
+      "suction_pressure": 2013.8146864337032,
+      "discharge_pressure": 83484.39469887338,
+      "delta_p": 83491.59387500709,
+      "flow": 0.006202252118680202,
+      "valve_position": 18.014542873030635,
+      "pump_speed_rpm": 302.98494888657683,
+      "head": 8.53188409453669,
+      "motor_current": 5.2185686041668315,
+      "voltage_rms": 5.044391089299757,
+      "power_kw": 3.1347468114002357,
+      "power_factor": 0.1548708547323372,
+      "motor_temperature": 4.969891864236106,
+      "fluid_temperature": 1.6593260304807764,
+      "density": 0.8016877579576588,
+      "hydraulic_power": 2.529949456551731,
+      "efficiency_est": 17.01275072870641
+    }
+  },
+  "rul_max_train": 10072.08203125,
+  "health_scale": 100.0,
+  "severity_labels": [
+    "early",
+    "failure",
+    "moderate",
+    "normal",
+    "severe"
+  ],
+  "mode_labels": [
+    "bearing_wear",
+    "cavitation",
+    "imbalance",
+    "misalignment",
+    "normal_operation",
+    "seal_leak"
+  ],
+  "sev_to_idx": {
+    "early": 0,
+    "failure": 1,
+    "moderate": 2,
+    "normal": 3,
+    "severe": 4
+  },
+  "mode_to_idx": {
+    "bearing_wear": 0,
+    "cavitation": 1,
+    "imbalance": 2,
+    "misalignment": 3,
+    "normal_operation": 4,
+    "seal_leak": 5
+  },
+  "severity_distribution": {
+    "0": 304,
+    "1": 96,
+    "2": 256,
+    "3": 434,
+    "4": 154
+  },
+  "mode_distribution": {
+    "0": 164,
+    "1": 163,
+    "2": 174,
+    "3": 183,
+    "4": 401,
+    "5": 159
+  }
+}
