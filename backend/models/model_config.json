@@ -1,0 +1,58 @@
+{
+  "max_sensors_fast": 4,
+  "n_freq": 17,
+  "n_frames": 9,
+  "aux_dim": 98,
+  "conv_filters": [
+    32,
+    64,
+    128
+  ],
+  "conv_kernels": [
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "pool_sizes": [
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "embedding_dim": 128,
+  "aux_dense": 64,
+  "combined_dense": 256,
+  "dropout": 0.3,
+  "n_severity": 5,
+  "n_mode": 6,
+  "batch_size": 32,
+  "epochs": 100,
+  "lr": 0.001,
+  "lr_decay": 0.95,
+  "early_stop_patience": 15,
+  "reduce_lr_patience": 5,
+  "loss_weight_severity": 2.0,
+  "loss_weight_mode": 1.0,
+  "loss_weight_rul": 1.0,
+  "loss_weight_health": 1.0,
+  "ood_percentile": 95.0,
+  "seed": 42,
+  "rul_max_train": 1.0
+}

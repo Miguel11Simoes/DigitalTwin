@@ -1,0 +1,21 @@
+{
+  "model_name": "PumpCNN2D_v2",
+  "version": "2.0.0",
+  "created": "2026-01-31T21:48:35.365594",
+  "files": [
+    "pump_cnn2d_v2.keras",
+    "pump_cnn2d_v2.tflite",
+    "pump_profile.json",
+    "model_config.json",
+    "pump_scalers.json",
+    "pump_labels.json",
+    "ood_config.json"
+  ],
+  "targets": {
+    "severity": 5,
+    "mode": 6,
+    "rul": "regression [0,1]",
+    "health": "regression [0,1]"
+  },
+  "rul_max_train": 1.0
+}

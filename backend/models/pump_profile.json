@@ -1,0 +1,46 @@
+{
+  "fast_cols": [
+    "overall_vibration",
+    "vibration_x",
+    "vibration_y",
+    "vibration_z"
+  ],
+  "slow_cols": [
+    "suction_pressure",
+    "discharge_pressure",
+    "delta_p",
+    "flow",
+    "valve_position",
+    "pump_speed_rpm",
+    "head",
+    "motor_current",
+    "voltage_rms",
+    "power_kw",
+    "power_factor",
+    "motor_temperature",
+    "fluid_temperature",
+    "density",
+    "hydraulic_power",
+    "efficiency_est"
+  ],
+  "context_cols": [
+    "run_state",
+    "ambient_temperature"
+  ],
+  "target_regression": [
+    "rul",
+    "health"
+  ],
+  "target_classification": [
+    "severity",
+    "mode"
+  ],
+  "window_stats": [
+    "last",
+    "mean",
+    "std",
+    "min",
+    "max",
+    "slope"
+  ]
+}

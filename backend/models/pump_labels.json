@@ -1,0 +1,17 @@
+{
+  "severity": {
+    "early": 0,
+    "failure": 1,
+    "moderate": 2,
+    "normal": 3,
+    "severe": 4
+  },
+  "mode": {
+    "bearing_wear": 0,
+    "cavitation": 1,
+    "imbalance": 2,
+    "misalignment": 3,
+    "normal_operation": 4,
+    "seal_leak": 5
+  }
+}
